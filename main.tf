@@ -102,8 +102,8 @@ resource "ibm_is_instance" "sample_vsi" {
   keys = [data.ibm_is_ssh_key.vsi_ssh_pub_key.id]
 }
 
-  resource "ibm_is_floating_ip" "zhut-fip1" {
+  resource "ibm_is_floating_ip" "fip1" {
   name   = "zhut-fip1"
-  target = ibm_is_instance.sample_vsi.primary_network_interface.id
+  target = ibm_is_instance.sample_vsi[0].primary_network_interface[0].id
 }
 
