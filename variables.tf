@@ -6,7 +6,7 @@
 # subnet_id - The ID of the subnet that the virtual server instance uses.
 ##############################################################################
 variable "subnet_id"{
-  default = ""
+  default = "0717-70823db2-b395-444b-b9f6-c803980c8025"
   description = "The ID of the subnet within the VPC that the virtual server instance uses. Required for users to specify."
 }
 
@@ -22,7 +22,7 @@ variable "ssh_key_name" {
 # vsi_instance_name - The name of the virtual server instance.
 ##############################################################################
 variable "vsi_instance_name" {
-  default     = ""
+  default     = "zhut-test-us"
   description = "The name of the virtual server instance. Required for users to specify."
 }
 
